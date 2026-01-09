@@ -43,6 +43,11 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
+                \App\Filament\Widgets\DashboardStats::class,
+                \App\Filament\Widgets\ReportSectionsStats::class,
+                \App\Filament\Widgets\ReportComparisonChart::class,
+                \App\Filament\Widgets\CapaStatusChart::class,
+                \App\Filament\Widgets\MonthlyReportsChart::class,
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
             ])
